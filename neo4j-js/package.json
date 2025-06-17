@@ -8,8 +8,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "neo4j-driver": "^5.28.1"
-  }
+  },
+  "description": ""
 }
