@@ -1,9 +1,9 @@
 from neo4j import GraphDatabase
+import os
 
-# Replace with your Neo4j Aura credentials
 URI = "neo4j+s://your-db-id.databases.neo4j.io"
 USERNAME = "neo4j"
-PASSWORD = "your-password"
+PASSWORD = os.environ.get("NEO4J_PASSWORD")  # Correct way in Python
 
 driver = GraphDatabase.driver(URI, auth=(USERNAME, PASSWORD))
 
